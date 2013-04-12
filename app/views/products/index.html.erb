@@ -1,11 +1,6 @@
 <h1>Products List</h1>
 
 <% if current_user %>
-  <%= form_tag products_path do %>
-    <%= text_field_tag :name %>
-    <%= submit_tag "Add" %>
-  <% end %>
-
   <ul id="tasks">
   <% @products.each do |product| %>
     <li><%= product["name"] %></li>
@@ -19,6 +14,6 @@
 <% else %>
   <p><strong>Currently not signed in.</strong></p>
   <p>
-    <%= link_to "Sign in through To Do List", "/auth/tradegecko" %>
+    <%= link_to "Sign in through TradeGecko", "/auth/tradegecko" %>
   </p>
 <% end %>

@@ -1,7 +1,6 @@
 class ProductsController < ApplicationController
   def index
     @products = access_token.get("/products").parsed["products"] if access_token
-    Rails.logger.warn @products
   end
 
   def create

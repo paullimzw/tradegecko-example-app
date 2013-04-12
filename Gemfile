@@ -39,5 +39,5 @@ gem 'pry'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'omniauth-oauth2'
+gem 'omniauth-tradegecko'
 
