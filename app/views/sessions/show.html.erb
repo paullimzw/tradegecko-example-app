@@ -1,0 +1,18 @@
+<h1>Auth Details</h1>
+
+<% if current_user %>
+  <dl>
+    <dt>Auth Token</dt>
+    <dd><input value="<%= session[:access_token] %>" readonly="readonly"></dd>
+  </dl>
+
+  <p id="logged_in">
+    Logged in as <strong><%= current_user.name %></strong>.
+    <%= link_to "Sign Out", signout_path %>
+  </p>
+<% else %>
+  <p><strong>Currently not signed in.</strong></p>
+  <p>
+    <%= link_to "Sign in through TradeGecko", "/auth/tradegecko" %>
+  </p>
+<% end %>

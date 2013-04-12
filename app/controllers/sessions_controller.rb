@@ -7,6 +7,9 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 
+  def show
+  end
+
   def destroy
     session[:user_id] = nil
     session[:access_token] = nil
