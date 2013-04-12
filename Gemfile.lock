@@ -149,6 +149,7 @@ DEPENDENCIES
   pg
   pry
   rails!
+  railties
   sass-rails (~> 4.0.0.beta1)
   uglifier (>= 1.0.3)
   unicorn
