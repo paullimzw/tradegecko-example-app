@@ -6,7 +6,7 @@ gem 'rails', github: 'rails/rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 
 # Gems used only for assets and not required
@@ -23,7 +23,11 @@ end
 
 gem 'jquery-rails'
 
-gem 'pry'
+group :development do
+  gem 'pry'
+  gem 'foreman'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -31,7 +35,7 @@ gem 'pry'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
