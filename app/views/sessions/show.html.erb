@@ -3,7 +3,11 @@
 <% if current_user %>
   <dl>
     <dt>Auth Token</dt>
-    <dd><input value="<%= session[:access_token] %>" readonly="readonly"></dd>
+    <dd><input value="<%= access_token.token %>" readonly="readonly"></dd>
+  </dl>
+  <dl>
+    <dt>Expires</dt>
+    <dd><%= Time.at(access_token.expires_at)%></dd>
   </dl>
 
   <p id="logged_in">
