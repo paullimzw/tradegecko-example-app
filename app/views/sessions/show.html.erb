@@ -6,6 +6,10 @@
     <dd><input value="<%= access_token.token %>" readonly="readonly"></dd>
   </dl>
   <dl>
+    <dt>Refresh Token</dt>
+    <dd><input value="<%= access_token.refresh_token %>" readonly="readonly"></dd>
+  </dl>
+  <dl>
     <dt>Expires</dt>
     <dd><%= Time.at(access_token.expires_at)%></dd>
   </dl>
