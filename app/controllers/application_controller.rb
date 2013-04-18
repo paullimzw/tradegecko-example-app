@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   rescue_from OAuth2::Error do |exception|
     if exception.response.status == 401
       begin
-        access_token.refresh!
+        @access_token = access_token.refresh!
         set_session_from_access_token(access_token)
       rescue
         clear_session
