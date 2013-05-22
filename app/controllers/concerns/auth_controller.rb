@@ -1,5 +1,4 @@
 module AuthController
-  require 'token_wrapper'
   extend ActiveSupport::Concern
 
   included do
@@ -27,7 +26,7 @@ private
                 refresh_token: session[:refresh_token],
                 expires_at: session[:expires_at]
         )
-        TokenWrapper.new(token) do |new_token|
+        AccessTokenWrapper::Base.new(token) do |new_token|
           set_session_from_access_token(new_token)
         end
       end

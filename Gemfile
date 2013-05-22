@@ -43,4 +43,5 @@ gem 'unicorn'
 # gem 'ruby-debug19', require: 'ruby-debug'
 
 gem 'omniauth-tradegecko'
+gem 'access_token_wrapper', github: 'tradegecko/access_token_wrapper'
 
