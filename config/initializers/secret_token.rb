@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
 
 # Make sure the secret is at least 30 characters and all random,
@@ -9,7 +9,7 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-OauthClient::Application.config.secret_token = if Rails.env.development? or Rails.env.test?
+OauthClient::Application.config.secret_key_base = if Rails.env.development? or Rails.env.test?
   ('X' * 128)
 else
   ENV['SECRET_TOKEN']
