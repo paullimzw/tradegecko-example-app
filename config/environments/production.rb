@@ -81,4 +81,6 @@ OauthClient::Application.configure do
   # Set Logger to STDOUT to work with Heroku
   config.logger = Logger.new(STDOUT)
   config.logger.level = Logger.const_get(ENV['LOG_LEVEL'] ? ENV['LOG_LEVEL'].upcase : 'INFO')
+
+  config.assets.cache_store = :dalli_store
 end

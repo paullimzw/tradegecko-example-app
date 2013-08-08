@@ -7,3 +7,7 @@ Run these commands to try it out.
   OAUTH_ID=... OAUTH_SECRET=... rails s -p 3001
 
 Requires Ruby 1.9.3 or later to run.
+
+== Heroku
+  heroku addons:add memcachier:dev
+  heroku labs:enable user-env-compile

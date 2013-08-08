@@ -35,6 +35,7 @@ end
 
 # Use unicorn as the app server
 gem 'unicorn'
+gem 'rails_12factor'
 
 # Deploy with Capistrano
 # gem 'capistrano'
