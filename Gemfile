@@ -7,7 +7,9 @@ gem 'rails'
 # gem 'rails', git: 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'barby'
+gem 'chunky_png'
+gem 'rmagick'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
