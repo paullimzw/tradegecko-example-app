@@ -26,7 +26,7 @@ private
                 refresh_token: session[:refresh_token],
                 expires_at: session[:expires_at]
         )
-        AccessTokenWrapper::Base.new(token) do |new_token|
+        AccessTokenWrapper::Base.new(token) do |new_token, exception|
           set_session_from_access_token(new_token)
         end
       end
