@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-# ruby "2.0.0"
+ruby "2.0.0"
 
 gem 'rails'
 
@@ -47,4 +47,3 @@ gem 'rails_12factor'
 
 gem 'omniauth-tradegecko'
 gem 'access_token_wrapper', github: 'tradegecko/access_token_wrapper'
-
